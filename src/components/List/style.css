@@ -1,0 +1,45 @@
+.totalList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+
+.menuList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  display: block;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.buttonsList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  width: 92px;
+  height: 40px;
+  background: #e9ecef;
+  border: 1.4px solid #e9ecef;
+  border-radius: 8px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #fd377e;
+  color: #ffffff;
+}

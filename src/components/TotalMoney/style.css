@@ -1,0 +1,47 @@
+.totalMoney {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 96px;
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+
+.valueBox {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+.valueTotal {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.textTotal {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
+}
+
+.spanTotal {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  width: 103px;
+  height: 30px;
+  color: #fd377e;
+}
