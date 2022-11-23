@@ -17,7 +17,8 @@
 }
 
 .inputDecription {
-  width: 314px;
+  width: 100%;
+  max-width: 440px;
   height: 53px;
   background: #f8f9fa;
   border: 2px solid #f8f9fa;
@@ -35,23 +36,29 @@
 .inputValues {
   display: flex;
   flex-direction: row;
-  gap: 62px;
+  gap: 20px;
+  width: 90%;
 }
 
 .values {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 90%;
+  box-sizing: border-box;
 }
 
 .inputType {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .input {
-  width: 128px;
+  width: 100%;
+  max-width: 440px;
   height: 48px;
   background: #f8f9fa;
   border: 2px solid #f8f9fa;
@@ -60,7 +67,8 @@
 }
 
 .button {
-  width: 314px;
+  width: 90%;
+  max-width: 340px;
   height: 48px;
   background: #fd377e;
   border: 2px solid #fd377e;
@@ -71,4 +79,82 @@
   font-size: 16px;
   color: #ffffff;
   cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .inputDecription {
+    width: 90%;
+  }
+
+  .inputValues {
+    width: 90%;
+  }
+
+  .inputType {
+    width: 90%;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .description {
+    width: 100%;
+    justify-content: center;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .mainDiv .containerPage {
+    width: 100%;
+  }
+
+  .mainDiv .flexGridPage {
+    width: 100%;
+  }
+
+  .mainDiv .form {
+    width: 100%;
+  }
+  .inputDecription {
+    width: 90%;
+  }
+
+  .leftDiv {
+    width: 100%;
+  }
+
+  .rightDiv {
+    width: 100%;
+  }
+
+  .inputValues {
+    width: 100%;
+  }
+
+  .inputType {
+    width: 90%;
+  }
+
+  .description {
+    width: 100%;
+    justify-content: center;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .inputValues {
+    width: 90%;
+  }
+}
+
+@media (max-width: 375px) {
+  .inputValues {
+    width: 90%;
+  }
+  .form {
+    width: 100%;
+  }
 }

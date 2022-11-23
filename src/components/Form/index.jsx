@@ -50,7 +50,7 @@ export const Form = ({ setListTransactions }) => {
         </div>
 
         <div className="inputType">
-          <label htmlFor="tupe">Tipo de Valor</label>
+          <label htmlFor="type">Tipo de Valor</label>
           <select
             className="input"
             value={typeTransaction}

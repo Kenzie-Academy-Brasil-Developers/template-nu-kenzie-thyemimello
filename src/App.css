@@ -1,9 +1,25 @@
 * {
+  box-sizing: border-box;
   margin: 0;
 }
 
 .mainDiv {
   width: 100%;
+  min-height: 100vh;
+}
+
+.mainDiv .containerPage {
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 100%;
+  padding: 16px;
+}
+
+.mainDiv .flexGridPage {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  min-height: 100vh;
 }
 
 .bothDiv {
@@ -28,43 +44,46 @@
 }
 
 .mainHome {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
   background: #212529;
-  height: 100vh;
-  gap: 30px;
+  min-height: 100vh;
+}
+
+.mainHome .container {
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 100%;
+  padding: 16px;
+}
+
+.mainHome .flexGrid {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  min-height: 100vh;
 }
 
 .leftBox {
   display: flex;
+  align-items: flex-start;
+  width: 100%;
   flex-direction: column;
-  justify-content: flex-start;
-  width: 20%;
-  gap: 30px;
+  gap: 16px;
 }
 
 .imgBox {
-  width: 123px;
-  height: 20px;
 }
 
 .rightBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  gap: 20px;
+  width: 100%;
 }
 
-.textTitle {
+.mainHome .textTitle {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
   font-size: 38px;
   color: #ffffff;
+  max-width: 400px;
 }
 
 .text {
@@ -77,7 +96,8 @@
 }
 
 .btnStart {
-  width: 241px;
+  width: 100%;
+  max-width: 340px;
   height: 48px;
   background: #fd377e;
   border: 2px solid #fd377e;
@@ -87,4 +107,103 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  .mainHome .flexGrid {
+    flex-direction: column;
+  }
+
+  .mainHome .leftBox {
+    align-items: center;
+  }
+
+  .mainHome .rightBox {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .bothDiv {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .leftDiv {
+    width: 100%;
+    max-width: 550px;
+  }
+
+  .rightDiv {
+    width: 90%;
+    margin-top: 50px;
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 425px) {
+  .mainHome {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .leftBox {
+    margin-top: 50px;
+  }
+
+  .btnStart {
+    width: 90%;
+  }
+
+  .bothDiv {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+  }
+
+  .leftDiv {
+    width: 100%;
+  }
+
+  .rightDiv {
+    margin-top: 50px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .leftDiv {
+    width: 100%;
+  }
+
+  .rightDiv {
+    width: 100%;
+  }
+
+  .bothDiv {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .leftDiv {
+    width: 100%;
+  }
+
+  .rightDiv {
+    width: 100%;
+  }
+
+  .bothDiv {
+    width: 100%;
+  }
 }

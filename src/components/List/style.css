@@ -43,3 +43,34 @@ p {
   background: #fd377e;
   color: #ffffff;
 }
+
+@media (max-width: 768px) {
+  .menuList {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .buttonsList {
+    width: 100%;
+    gap: 5px;
+  }
+
+  .totalList {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 375px) {
+  .buttonsList {
+    width: 100%;
+    gap: 5px;
+  }
+
+  .totalList {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

@@ -32,45 +32,55 @@ export const App = () => {
         <div>
           <Header page={page} setPage={setPage} />
           <div className="mainDiv">
-            <div className="bothDiv">
-              <div className="leftDiv">
-                <Form
-                  listTransactions={listTransactions}
-                  setListTransactions={setListTransactions}
-                />
-                <TotalMoney listTransactions={listTransactions} />
-              </div>
-              <div className="rightDiv">
-                <List
-                  listTransactions={filtredList}
-                  removeCard={removeCard}
-                  setFilter={setFilter}
-                />
+            <div className="containerPage">
+              <div className="flexGridPage">
+                <div className="bothDiv">
+                  <div className="leftDiv">
+                    <Form
+                      listTransactions={listTransactions}
+                      setListTransactions={setListTransactions}
+                    />
+                    <TotalMoney listTransactions={listTransactions} />
+                  </div>
+                  <div className="rightDiv">
+                    <List
+                      listTransactions={filtredList}
+                      removeCard={removeCard}
+                      setFilter={setFilter}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       ) : (
         <div className="mainHome">
-          <div className="leftBox">
-            <img
-              className="imgBox"
-              src={require("./assets/Nu_Kenzieblack.png")}
-              alt=""
-            />
-            <p className="textTitle">Centralize o controle das suas finanças</p>
-            <p className="text">de forma rápida e segura</p>
-            <button
-              className="btnStart"
-              type="button"
-              onClick={() => setPage(!page)}
-            >
-              Iniciar
-            </button>
-          </div>
+          <div className="container">
+            <div className="flexGrid">
+              <div className="leftBox">
+                <img
+                  className="imgBox"
+                  src={require("./assets/Nu_Kenzieblack.png")}
+                  alt=""
+                />
+                <p className="textTitle">
+                  Centralize o controle das suas finanças
+                </p>
+                <p className="text">de forma rápida e segura</p>
+                <button
+                  className="btnStart"
+                  type="button"
+                  onClick={() => setPage(!page)}
+                >
+                  Iniciar
+                </button>
+              </div>
 
-          <div className="rightBox">
-            <img src={require("./assets/illustration.png")} alt="" />
+              <div className="rightBox">
+                <img src={require("./assets/illustration.png")} alt="" />
+              </div>
+            </div>
           </div>
         </div>
       )}
